@@ -14,16 +14,14 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.15287bc6c95f23c6b04f6af25193344d.js"
+  "/precache-manifest.363ed293807e5c72991fb7cbdff0def9.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "been-together"});
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
-    self.skipWaiting();
-  }
-});
+workbox.core.skipWaiting();
+
+workbox.core.clientsClaim();
 
 /**
  * The workboxSW.precacheAndRoute() method efficiently caches and responds to
