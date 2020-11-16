@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.42038ad73f0d93e3bf3a91e29aa502a5.js"
+  "/precache-manifest.444a37125da5185d4bb63287ed55b7db.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "been-together"});
